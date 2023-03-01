@@ -44,7 +44,7 @@ body {
     gap: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px auto auto auto 50px;
+    grid-template-rows: 50px 190px 100px auto 50px;
     grid-template-areas:
     "nav article2 article2"
     "article1 article2 article2"
@@ -58,7 +58,6 @@ body {
     background-color: var(--container-color);
 }
 .article2 {
-    height: 240px;
     grid-area: article2;
     background-color: var(--container-color);
 }
@@ -67,7 +66,6 @@ body {
     background-color: var(--container-color);
 }
 .article4 {
-    height: 100px;
     grid-area: article4;
     background-color: var(--container-color);
 }
