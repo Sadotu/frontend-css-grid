@@ -1,1 +1,104 @@
-/*Maak hier jouw CSS!*/
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Imports
+    2. Global Styles
+    3. Areas
+        3.1 Header
+        3.2 Main
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+/*////////////////////////
+    1. Imports
+////////////////////////*/
+
+
+/*////////////////////////
+    2. Global Styles
+////////////////////////*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --container-color: #A69CAC;
+}
+
+body {
+    height: 100vh;
+    background-color: #F1DAC4;
+    font-family: 'Poppins', sans-serif;
+}
+.nav {
+    grid-area: nav;
+    background-color: var(--container-color);
+}
+
+.containers {
+    height: 100vh;
+    padding: 25px;
+    gap: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 190px 100px auto 50px;
+    grid-template-areas:
+    "nav article2 article2"
+    "article1 article2 article2"
+    "article1 article3 article4"
+    "article1 article3 ."
+    "footer footer footer";
+}
+
+@media (max-width: 768px) {
+    .containers {
+        grid-template-columns: auto;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas:
+        "nav"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+        "."
+        "footer";
+    }
+}
+
+.article1 {
+    grid-area: article1;
+    background-color: var(--container-color);
+}
+.article2 {
+    grid-area: article2;
+    background-color: var(--container-color);
+}
+.article3 {
+    grid-area: article3;
+    background-color: var(--container-color);
+}
+.article4 {
+    grid-area: article4;
+    background-color: var(--container-color);
+}
+
+.footer {
+    grid-area: footer;
+    background-color: var(--container-color);
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+/*///////////// 3.1 Header /////////////*/
+
+
+/*///////////// 3.2 Main /////////////*/
+
+
+/*///////////// 3.6 Footer /////////////*/
