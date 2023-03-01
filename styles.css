@@ -53,6 +53,21 @@ body {
     "footer footer footer";
 }
 
+@media (max-width: 768px) {
+    .containers {
+        grid-template-columns: auto;
+        grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+        grid-template-areas:
+        "nav"
+        "article1"
+        "article2"
+        "article3"
+        "article4"
+        "."
+        "footer";
+    }
+}
+
 .article1 {
     grid-area: article1;
     background-color: var(--container-color);
